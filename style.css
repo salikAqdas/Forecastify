@@ -31,6 +31,7 @@ body{
     border:1px solid #fff;
     padding: 8px;
     font-size: 16px;
+    text-align:center;
 }
 .inp-container #search-btn{
     border-radius: 20px;
@@ -40,7 +41,63 @@ body{
     margin-left: 10px;
     height: 40px;
 }
+.inp-container #search-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .inp-container #search-btn img{
     width: 18px;
     height: 18px;
+}
+.weather-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.weather-content .city-weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather-content #weather-icon{
+    width: 80px;
+    height:80px;
+}
+#temp{
+    font-size: 22px;
+    font-weight: 600;
+    color:#fff;
+}
+#temp-type,
+#city-name{
+    font-weight: 600;
+    color:#fff;
+    font-size: 14px;
+}
+.wind-humidity-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.wind-humidity-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.wind-humidity-container img{
+    width: 50px;
+    height: 50px;
+}
+.wind-humidity-container .label{
+    font-size:14px;
+    font-weight:500;
 }
