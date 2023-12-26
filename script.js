@@ -1,3 +1,4 @@
+
 let mainCon = document.getElementById("mainCon");
 document.getElementById("search-btn").addEventListener('click',()=>{
     let inp = document.getElementById("cityinp").value.trim();
@@ -30,15 +31,6 @@ async function fetchWeatherData( apiUrl){
     }
     document.getElementById("weather-icon").src = src;
 
-    saveData();
 }
 
-function saveData(){
-    localStorage.setItem("weather-data" , mainCon.innerHTML);
-}
-function loadData(){
-    if(localStorage.getItem("weather-data") != null && localStorage.getItem("weather-data") != "null"){
-        mainCon.innerHTML = localStorage.getItem("weather-data");
-    }
-}
-loadData();
+
